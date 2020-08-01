@@ -13,27 +13,27 @@
   </head>
   <body>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
-                <a class="navbar-brand" href="#">LARA FS</a>
+                <a class="navbar-brand" href="#home">LARA FS</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">intro <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#intro">intro <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">experience</a>
+                                <a class="nav-link" href="#experience">experience</a>
                             </li>
                             <li class="nav-item">
-                                    <a class="nav-link" href="#">resume</a>
+                                    <a class="nav-link" href="#projects">projects</a>
                                 </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">projects</a>
+                                <a class="nav-link" href="#gallery">gallery</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">contact</a>
+                                <a class="nav-link" href="#contact">contact</a>
                             </li> 
                         </ul>
                 </div>
@@ -42,10 +42,7 @@
         <header>
             <div class="overlay"></div>
             <img src="nintendo.png" /> 
-            <!--video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
-                <source src="pixar.mov" type="video/mp4">
-            </video-->
-            <div class="container h-100" style="padding-top: 10em;">
+            <div class="container h-100" id="home" style="padding-top: 10em;">
                     <h1 class="strokeme" style="font-size: 8em;">Lara <br> Floegel-Shetty</h1> 
                     <h2 style="font-size: 2.5em;"> Computer Graphics Programmer </h2> 
                     <h3 style="font-size: 1.5em;"> Computer Science B.S. | UCSB | Senior </h3> 
@@ -54,7 +51,7 @@
             </div> 
         </header> 
 
-        <div class="container" style="margin-left: auto;margin-right: auto;margin-top: 8vw;"> 
+        <div class="container" id="intro" style="margin-left: auto;margin-right: auto;margin-top: 8vw;"> 
             <img src="sailing.png" class="img-fluid d-block mx-auto" style="width: 18em;height: 20em;margin-top: 4em;" alt="Responsive image"> 
             <div class="container" style="padding-top: 2em;padding-left: 8em;padding-right: 8em;"> 
                 <h2 style="font-size: 2.5em;"> Intro </h2> 
@@ -74,7 +71,7 @@
             <button type="button" class="btn btn-outline-light d-block" style="margin-left: auto;margin-right: auto;margin-top: 4em;">View Resume</button>
         </div> 
 
-        <div class="container" style="margin-top: 4em;"> 
+        <div class="container" id="experience" style="margin-top: 4em;"> 
             <h2> Experience</h5> 
             <ul class="timeline" style="position: absolute;width: 100%;padding-left: 1em;padding-right: 20em;">
                     <li class="li">
@@ -157,7 +154,7 @@
 
             
 
-            <div class="container" style="margin-top: 8em;margin-left: 10vw;margin-right: 8vw;"> 
+            <div class="container" id="projects" style="margin-top: 8em;margin-left: 10vw;margin-right: 8vw;"> 
                     <h2> Projects </h2>
                     <h4 style="padding-left: 1em;"> Disney Environment Software Engineer Intern </h4>
                     <p style="padding-left: 5em;"> 
@@ -188,7 +185,7 @@
                         <img src="sailing.png" class="mx-auto d-block" style="height: 15vw;width: 25vw;" /> 
                 </div> 
 
-                <div class="container" style="margin-top: 4em;"> 
+                <div class="container" id="gallery" style="margin-top: 4em;"> 
                     <h2> Gallery </h2>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -218,7 +215,7 @@
                     </div> 
                 </div> 
 
-                <div class="imageContainer"> 
+                <div class="imageContainer" id="contact"> 
                     <h2 style="padding-top: 2em;"> Contact </h2> 
                     <p> lfloegel.shetty@gmail.com</p> 
                     <ul class="list-inline banner-social-buttons" style="display: inline;">
@@ -247,16 +244,13 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="/path/to/js/jquery-anchorScroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script>
         $(window).scroll(function(){
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 40);
         });
-    </script>
-    <script>
-        var vid = document.getElementById("myVideo");
-        vid.playbackRate = 1.0;
     </script>
   </body>
 </html>
