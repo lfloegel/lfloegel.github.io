@@ -69,7 +69,7 @@ header img {
 header .container {
   position: relative;
   z-index: 2;
-}
+} 
 
 header .overlay {
   position: absolute;
@@ -82,15 +82,6 @@ header .overlay {
   z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
-}
-
 /* outlines title */ 
 .strokeme
 {
@@ -99,16 +90,6 @@ header .overlay {
   0.8px -0.8px 0 #000,
   -0.8px 0.8px 0 #000,
   0.8px 0.8px 0 #000;  
-} 
-
-/* gradient over bg*/ 
-#grad1 {
-  height: 180px; 
-  position: relative; 
-  width: 200vw; 
-  margin-top: 2vw;
-  margin-left: -100vw; 
-  background-image: linear-gradient( rgba(255, 255, 255, 0), rgb(19, 19, 19)); /* Standard syntax (must be last) */ 
 } 
 
 /* experience timeline */ 
@@ -157,4 +138,47 @@ header .overlay {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+/* mobile responsive */ 
+@media screen and (max-width: 700px) {
+  .bg-dark {
+    background:white !important;
+    transition:0.75s ease;
+    border: none; 
+  } 
+
+  #title{
+    font-size: 20vw !important;
+  } 
+
+  #cg { 
+    font-size: 8vw !important; 
+  } 
+
+  #style { 
+    font-size: 4vw !important; 
+  } 
+
+  #intro-content { 
+    padding-top:2em !important; 
+    padding-left:1em !important; 
+    padding-right:1em !important;
+  } 
+
+  #experience-content { 
+    padding-right:4em !important;
+  } 
+
+  #coursework-content{
+    margin-top: 70em !important; 
+  } 
+
+  #projects { 
+    margin-left:2vw !important; 
+  } 
+
+  .carousel-inner img {
+    width: 50%; 
+  } 
 }
