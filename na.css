@@ -5,6 +5,7 @@ html {
 body {
     background-color:rgb(19, 19, 19);
     color: white; 
+    position: relative; 
 }
 
 /* nav bg */
@@ -19,6 +20,10 @@ body {
     border-bottom-color: black; 
     border-bottom-width: 1px; 
 } 
+
+.nav-link.active {
+  color: rgb(111, 165, 182) !important; 
+}
 
 /* scroll bar style */ 
 /* width */
@@ -171,7 +176,7 @@ header .overlay {
   } 
 
   #coursework-content{
-    margin-top: 70em !important; 
+    margin-top: 100em !important; 
   } 
 
   #projects { 

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
     <title>Lara FS</title> 
+    <link rel="canonical" href="https://lfloegel.github.io/">
 
     <!-- Bootstrap CSS --> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
@@ -13,17 +14,17 @@
 
   </head>
 
-  <body> 
+  <body data-spy="scroll" data-target=".navbar" data-offset="40"> 
         <!-- navigation -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark" role="navigation">
                 <a class="navbar-brand" href="#home">LARA FS</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#intro">intro <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#intro">intro <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#experience">experience</a>
@@ -54,12 +55,12 @@
 
         <!-- intro -->
         <div class="container" id="intro" style="margin-left: auto;margin-right: auto;margin-top: 8vw;"> 
-            <img src="sailing.png" class="img-fluid d-block mx-auto" style="width:18em;height:20em;margin-top:4em;" alt="Responsive image"> 
+            <img src="sailing25.png" class="img-fluid d-block mx-auto" style="width:18em;height:auto;margin-top:4em;" alt="Responsive image"> 
             <div class="container" id="intro-content" style="padding-top:2em;padding-left:8em;padding-right:8em;"> 
                 <h2 style="font-size:2.5em;"> Intro </h2> 
                 <p style="font-size:1.1em;"> 
-                Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
-                rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, 
+                I'm Lara, a senior in Computer Science at the College of Creative Studies at University of California, Santa Barbara. 
+                As an aspiring Computer Graphics Programmer, I . . . 
                 </p> 
                 <p>
                 sitientis piros Afros. Petierunt uti sibi concilium 
@@ -77,7 +78,7 @@
         </div> 
 
         <!-- experience -->
-        <div class="container" id="experience" style="margin-top: 4em;"> 
+        <section class="container" id="experience" style="margin-top: 4em;padding-bottom:"> 
             <h2> Experience</h5> 
             <ul class="timeline" id="experience-content" style="position:absolute;width:100%;padding-left:1em;padding-right:20em;">
                 <li class="li">
@@ -85,7 +86,7 @@
                         <span class="date">2020 summer</span>
                     </div>
                     <div class="status">
-                        <h4>Ready to pitch</h4> 
+                        <h4>Disney Environment Software Engineer Intern</h4> 
                         <p> 
                         Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
                         rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, 
@@ -98,7 +99,7 @@
                         <span class="date">2020 - Ongoing</span>
                     </div>
                     <div class="status">
-                        <h4>Ready to pitch</h4> 
+                        <h4>Computer Graphics Research Assistant</h4> 
                         <p> 
                         Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
                         rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, 
@@ -111,7 +112,7 @@
                         <span class="date">2019 summer</span>
                     </div>
                     <div class="status">
-                        <h4>Ready to pitch</h4> 
+                        <h4>Softeware Engineer Intern</h4> 
                         <p> 
                         Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
                         rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, 
@@ -124,7 +125,7 @@
                         <span class="date">2018 - 2020</span>
                     </div>
                     <div class="status">
-                        <h4>Ready to pitch</h4> 
+                        <h4>Software Developer</h4> 
                         <p> 
                         Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
                         rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, 
@@ -137,7 +138,7 @@
                         <span class="date">2017 - 2018</span>
                     </div>
                     <div class="status">
-                        <h4>Ready to pitch</h4> 
+                        <h4>Virtual Reality Research Assistant</h4> 
                         <p> 
                         Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
                         rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, 
@@ -145,54 +146,73 @@
                     </div>
                 </li>
             </ul> 
-        </div>  
+        </section>  
 
         <!-- coursework -->
         <div class="container" id="coursework-content" style="margin-top:60em;"> 
             <h2> Relevant Coursework</h5> 
             <p style="margin-left:auto;margin-right:auto;"> 
-            CS180 - Computer Graphics, CS181 - Computer Vision, CS170 - Operating Systems, CS130H - Game Development and Design, Physics 
-            1/2/3/3L - Basic Physics, Math 3B - Calculus, Math 4A - Linear Algrebra, Math 4B - Differential Equations, Math 6A - Vector 
-            Calculus, CS138 - Automata and Formal Languages, ECE194T - Haptic Engineering, CS185 - Human Computer Interaction, CS180 - 
-            Android Development, CS130A - Data Structures and Algorithms, PSTAT120A - Probability and Statistics, PSTAT120B - Applied 
-            Statistics 
+            <b> CS180 </b> - Computer Graphics, <b> CS181 </b> - Computer Vision, <b> CS170 </b> - Operating Systems, <b> CS130H </b> - Game Development and Design, 
+            <b> Physcis 1/2/3/3L </b> - Basic Physics, <b> Math 3B </b> - Calculus, <b> Math 4A </b> - Linear Algrebra, <b> Math 4B </b> - Differential Equations, 
+            <b> Math 6A </b> - Vector Calculus, <b> CS138 </b> - Automata and Formal Languages, <b> ECE194T </b> - Haptic Engineering, <b> CS185 </b> 
+            - Human Computer Interaction, <b> CS184 </b> - Android Development, <b> CS130A </b> - Data Structures and Algorithms, <b> PSTAT120A </b> - Probability and 
+            Statistics, <b> PSTAT120B </b> - Applied Statistics 
             </p>
         </div>  
 
         <!-- projects -->
         <div class="container" id="projects" style="margin-top:8em;margin-left:10vw;margin-right:8vw;"> 
-            <h2> Projects </h2>
-            <h4 style="padding-left:1em;"> Disney Environment Software Engineer Intern </h4>
+            <h2> Projects </h2> 
+            <h4 style="padding-left:1em;"> <a href="#" style="text-decoration:none;color:rgb(111, 165, 182);"> Literacy in VR </a> </h4> 
+            <h5 style="padding-left:2em;color:rgba(233, 233, 233, 0.644);"> C#, SteamVR, Unity3D </h5> 
+            <p style="padding-left:5em;"> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
+                rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium 
+                totius Galliae in diem certam indicere. Cras mattis iudiciu 
+            </p> 
+            <img src="sailing.png" class="mx-auto d-block w-25" /> 
+            <h4 style="padding-left:1em;"> <a href="#" style="text-decoration:none;color:rgb(111, 165, 182);"> Operating System - KOS </a> </h4>
+            <h5 style="padding-left:2em;color:rgba(233, 233, 233, 0.644);"> C </h5> 
             <p style="padding-left:5em;"> 
                 Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
                 rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium 
                 totius Galliae in diem certam indicere. Cras mattis iudiciu 
             </p> 
-            <img src="sailing.png" class="mx-auto d-block" style="height:15vw;width:25vw;" /> 
-            <h4 style="padding-left:1em;"> Computer Graphics Research Assistant </h4>
+            <img src="sailing.png" class="mx-auto d-block w-25" /> 
+            <h4 style="padding-left:1em;"> <a href="#" style="text-decoration:none;color:rgb(111, 165, 182);"> Mind of MRI </a> </h4> 
+            <h5 style="padding-left:2em;color:rgba(233, 233, 233, 0.644);"> C#, Python </h5> 
             <p style="padding-left:5em;"> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
                 rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium 
                 totius Galliae in diem certam indicere. Cras mattis iudiciu 
             </p> 
-            <img src="sailing.png" class="mx-auto d-block" style="height:15vw;width:25vw;" /> 
-            <h4 style="padding-left:1em;"> Brain Sciences Intern </h4>
+            <img src="sailing.png" class="mx-auto d-block w-25" /> 
+            <h4 style="padding-left:1em;"> <a href="#" style="text-decoration:none;color:rgb(111, 165, 182);"> Computer Graphics </a> </h4> 
+            <h5 style="padding-left:2em;color:rgba(233, 233, 233, 0.644);"> C++ </h5> 
             <p style="padding-left:5em;"> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
                 rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium 
                 totius Galliae in diem certam indicere. Cras mattis iudiciu 
             </p> 
-            <img src="sailing.png" class="mx-auto d-block" style="height:15vw;width:25vw;" /> 
-            <h4 style="padding-left:1em;"> Software Developer </h4>
+            <img src="sailing.png" class="mx-auto d-block w-25" /> 
+            <h4 style="padding-left:1em;"> <a href="#" style="text-decoration:none;color:rgb(111, 165, 182);"> Tastbuddy </a> </h4> 
+            <h5 style="padding-left:2em;color:rgba(233, 233, 233, 0.644);"> Java, Firebase, Android Studio </h5> 
             <p style="padding-left:5em;"> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
                 rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium 
                 totius Galliae in diem certam indicere. Cras mattis iudiciu 
             </p> 
-            <img src="sailing.png" class="mx-auto d-block" style="height:15vw;width:25vw;" /> 
-            <h4 style="padding-left:1em;"> VR Research Assistant </h4>
+            <img src="sailing.png" class="mx-auto d-block w-25" /> 
+            <h4 style="padding-left:1em;"> <a href="#" style="text-decoration:none;color:rgb(111, 165, 182);"> Bow and Arrow Haptic Simulation </a> </h4> 
+            <h5 style="padding-left:2em;color:rgba(233, 233, 233, 0.644);"> C++, Chai3D </h5> 
             <p style="padding-left:5em;"> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
                 rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium 
                 totius Galliae in diem certam indicere. Cras mattis iudiciu 
             </p> 
-            <img src="sailing.png" class="mx-auto d-block" style="height:15vw;width:25vw;" /> 
+            <img src="sailing.png" class="mx-auto d-block w-25" /> 
+            <h4 style="padding-left:1em;"> <a href="#" style="text-decoration:none;color:rgb(111, 165, 182);"> Blockbased Coding </a> </h4> 
+            <h5 style="padding-left:2em;color:rgba(233, 233, 233, 0.644);"> C#, Unity3D </h5> 
+            <p style="padding-left:5em;"> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis 
+                rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium 
+                totius Galliae in diem certam indicere. Cras mattis iudiciu 
+            </p> 
+            <img src="sailing.png" class="mx-auto d-block w-25" /> 
         </div> 
 
         <!-- gallery -->
@@ -240,13 +260,13 @@
                 <li style="display:inline;">
                     <a href="#" class="btn btn-lg btn-outline-dark"><i
                                 class="fa fa-github fa-fw"></i> <span
-                                class="network-name">linkedin</span>
+                                class="network-name">github</span>
                     </a>
                 </li>
                 <li style="display:inline;">
                     <a href="#" class="btn btn-lg btn-outline-dark"><i
                                 class="fa fa-facebook fa-fw"></i> <span
-                                class="network-name">linkedin</span>
+                                class="network-name">facebook</span>
                     </a>
                 </li>
             </ul> 
