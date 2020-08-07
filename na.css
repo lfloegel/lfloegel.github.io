@@ -100,8 +100,7 @@ header .overlay {
 /* experience timeline */ 
 .timeline {
   list-style: none;
-  height: 400px;
-  width: 320px;
+  width: 2em; 
 } 
     
 .timeline .li .timestamp {
@@ -111,7 +110,6 @@ header .overlay {
 }
 
 .timeline .li .status {
-  width: 100%;
   border-left: 2px solid white;
   padding: 20px;
   padding-left: 30px;
