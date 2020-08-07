@@ -99,8 +99,7 @@ header .overlay {
 
 /* experience timeline */ 
 .timeline {
-  list-style: none;
-  width: 2em; 
+  list-style: none; 
 } 
     
 .timeline .li .timestamp {
