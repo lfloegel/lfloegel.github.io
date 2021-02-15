@@ -1,8 +1,0 @@
-.bg-dark { 
-    transition: 500ms ease; 
-    background: rgb(168, 84, 98) !important; 
-}
-
-.bg-dark.scroll {
-    background: rgb(189, 236, 255) !important; 
-}
