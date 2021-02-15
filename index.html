@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3283a470ad.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+
+
+        <div class="profile">
+                <img src="images/cg.png" alt="Image" class="img-fluid">
+              </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">Intro</a>
+                </li>
+                <li>
+                    <a href="#">Experience</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+
+
+                <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Contact</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                                <a href="https://www.linkedin.com/in/larafs" class="btn btn-lg btn-outline-light"><i
+                                    class="fab fa-linkedin-in"></i>
+                                </a>
+                        </li>
+                        <li>
+                                <a href="https://github.com/lfloegel" class="btn btn-lg btn-outline-light"><i
+                                    class="fab fa-github"></i>
+                                </a>
+                        </li>
+                        <li>
+                                <a href="https://www.facebook.com/profile.php?id=100017554575742" class="btn btn-lg btn-outline-light"><i
+                                    class="fab fa-facebook-f"></i>
+                                </a>
+                        </li>
+                        </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <button type="button" class="btn btn-outline-light download">
+                            <a href="src/cv.pdf" style="color:white;text-decoration:none;"> 
+                                View Resume
+                            </a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <div class="custom-menu" style="margin-top: -25px;margin-left:-25px;">
+                <button type="button" id="sidebarCollapse" class="btn btn-light">
+                <i class="fa fa-bars" style="font-size:25px;"></i>
+                <span class="sr-only">Toggle Menu</span>
+                </button>
+            </div>
+
+            <header>
+                <div class="container h-100" id="home" style="padding-top:5em;padding-bottom:5em;">
+                    <h1 class="strokeme" id="title" style="font-size:8.4vw;">Lara <br> Floegel-Shetty</h1> 
+                    <h2 class="strokeme" id="cg" style="font-size: 2.5vw;"> Computer Graphics Programmer </h2> 
+                    <h3 class="strokeme" id="style" style="font-size: 1.5vw;"> Computer Science B.S. | UCSB | Senior </h3> 
+                </div>
+            </header>
+
+
+        <div id="intro"> 
+                <img src="images/sailing25.png" class="img-fluid d-block mx-auto" style="width:18em;height:auto;margin-top:4em;" alt="Responsive image"> 
+                <div id="intro-content" style="padding-top:1em;"> 
+                    <h2 style="font-size:2.5em;"> Intro </h2> 
+                    <p style="font-size:1.1em;"> 
+                    Welcome! I'm Lara, a senior in Computer Science at the College of Creative Studies at University of California, Santa Barbara. 
+                    As an aspiring Computer Graphics Programmer, I strive to further develop my skills in bridging the real and visual worlds. 
+                    </p> 
+                    <p style="font-size:1.1em;">
+                    I plan to extend my research into graduate school and obtain a Masters in CS with a focus on CG. 
+                    During that time, I am intent on getting valuable hands on experience and look forward 
+                    to working alongside your team in developing optimized and innovative CG software! 
+                    </p>
+                </div> 
+            </div>
+
+            <div class="line"></div>
+            
+            <h2>Experience</h2> 
+
+            <div style="margin-left:auto;margin-right:auto;"> 
+                    <div class="container" style="list-style-type:none;"> 
+                    <li class="li">
+                        <div class="timestamp">
+                            <span class="date">June 2021 - Sept 2021</span>
+                        </div>
+                        <div class="status">
+                            <h4>Disney Environment Software Engineer Intern ** Deferred to Summer 2021 ** </h4> 
+                            <p> 
+                            Due to the pandemic, Disney has deferred their Summer 2020 Walt Disney Animation Studios interships to Summer 2021. 
+                            </p> 
+                            <p> 
+                            In lull of my internship, I have taught myself modeling through Maya, familiarized myself with OpenGL, CMake, and USD, and 
+                            advanced my understanding of CG related procedural systems (i.e. CG primitives, instancing techniques, particle systems). 
+                            </p> 
+                            <p> 
+                            Overview of internship role: Instancing modeled geometry and procedurally generated primitives in conjunction with USD, Universal Scene 
+                            Description. Major redesigning and unifying of instancing systems to better optimize toolset that is used to build environments. 
+                            </p> 
+                        </div>
+                    </li>
+                    
+                    <li class="li">
+                        <div class="timestamp">
+                            <span class="date"> Sept 2020 - Ongoing</span>
+                        </div>
+                        <div class="status">
+                            <h4>Computer Graphics Research Intern</h4> 
+                            <p> 
+                            I will be joining Computer Graphics researcher <a href="https://sites.cs.ucsb.edu/~lingqi/" target="_blank" style="color:rgb(111, 165, 182);"> Lingqi Yan </a> as 
+                            a research intern in his lab at UCSB. The research will focus on rendering photo realistic graphics at real world complexity.   
+                            </p>
+                        </div>
+                    </li> 
+    
+                    <li class="li">
+                            <div class="timestamp">
+                                <span class="date">2018 - 2020</span>
+                            </div>
+                            <div class="status">
+                                <h4>Software Developer</h4> 
+                                <p> 
+                                UCSB Gevirtz School of Education. Lead software developer in building the backend infrastructure of a SteamVR 
+                                educational game modeled for children with difficulty learning in a traditional classroom environment. Designed 
+                                in game graphics and user interface. 
+                                </p>
+                            </div>
+                        </li>
+                    
+                    <li class="li">
+                        <div class="timestamp">
+                            <span class="date"> June - Aug 2019 </span>
+                        </div>
+                        <div class="status">
+                            <h4>Software Engineer Intern</h4> 
+                            <p> 
+                            Interned at Stevens Neuroimaging and Informatics Institute. I developed an app visualizing the mathematical foundations 
+                            of MRIs through 3D graphics. I transformed MRI data into 3D models of the neural pathways through offline rendering. 
+                            </p>
+                        </div>
+                    </li>
+                    
+                    <li class="li">
+                        <div class="timestamp">
+                            <span class="date">2017 - 2018</span>
+                        </div>
+                        <div class="status">
+                            <h4>Virtual Reality Research Assistant</h4> 
+                            <p> 
+                                UCSB Gevirtz School of Education. Co-developed the front and backend of a Scratch inspired program designed to teach young children the fundamentals of 
+                                programming in an immersive and responsive environment. I revamped the UI and UX to be more 
+                                intuitive for the intended users. 
+                            </p>
+                        </div>
+                    </li> 
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div id="coursework-content"> 
+                <h2> Relevant Coursework</h5> 
+                <p style="margin-left:auto;margin-right:auto;"> 
+                <b style="color:#000;"> CS190i </b> - Offline Rendering, </b> <b style="color:#000;"> CS180 </b> - Computer Graphics, <b style="color:#000;"> CS181 </b> - Computer Vision, <b style="color:#000;"> CS170 </b> - Operating Systems, <b style="color:#000;"> CS130H </b> - Game Development and Design, 
+                <b style="color:#000;"> MAT259 </b> - Data Visualization, </b><b style="color:#000;">  Physcis 1/2/3/3L </b> - Basic Physics, <b style="color:#000;"> Math 3B </b> - Calculus, <b style="color:#000;"> Math 4A </b> - Linear Algrebra, <b style="color:#000;"> Math 4B </b> - Differential Equations, 
+                <b style="color:#000;"> Math 6A </b> - Vector Calculus, <b style="color:#000;"> CS160 </b> - Compiler Systems, </b><b style="color:#000;"> CS138 </b> - Automata and Formal Languages, <b style="color:#000;"> ECE194T </b> - Haptic Engineering, <b style="color:#000;"> CS185 </b> 
+                - Human Computer Interaction, <b style="color:#000;"> CS184 </b> - Android Development, <b style="color:#000;"> CS130A </b> - Data Structures and Algorithms, <b style="color:#000;"> PSTAT120A </b> - Probability and 
+                Statistics, <b style="color:#000;"> PSTAT120B </b> - Applied Statistics 
+                </p>
+            </div>
+
+            <div class="line"></div>
+
+            <!-- projects -->
+            <div id="projects"> 
+                <h2> Projects </h2>
+                <h4 style="padding-left:1em;"> Offline Rendering </h4> 
+                <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> C++, Python </h5> 
+                <p style="padding-left:5em;"> A VR program developed in Unity3D to provide an immersive alternative means of teaching literary 
+                    skills to young children who have difficulties learning in a traditional classroom environment. The immersive program takes 
+                    them on a narrative journey they create as they gradually build their literary tools. 
+                </p> 
+                <h4 style="padding-left:1em;"> Cook Torrance Implementation </h4> 
+                <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> C++, CMake </h5> 
+                <p style="padding-left:5em;"> A VR program developed in Unity3D to provide an immersive alternative means of teaching literary 
+                    skills to young children who have difficulties learning in a traditional classroom environment. The immersive program takes 
+                    them on a narrative journey they create as they gradually build their literary tools. 
+                </p> 
+                <h4 style="padding-left:1em;"> Visualizing SPL Database </h4> 
+                <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> Java, Processing, MySQL </h5> 
+                <p style="padding-left:5em;"> A VR program developed in Unity3D to provide an immersive alternative means of teaching literary 
+                    skills to young children who have difficulties learning in a traditional classroom environment. The immersive program takes 
+                    them on a narrative journey they create as they gradually build their literary tools. 
+                </p> 
+                <h4 style="padding-left:1em;"> Literacy in VR </h4> 
+                <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> C#, SteamVR, Unity3D, Maya </h5> 
+                <p style="padding-left:5em;"> A VR program developed in Unity3D to provide an immersive alternative means of teaching literary 
+                    skills to young children who have difficulties learning in a traditional classroom environment. The immersive program takes 
+                    them on a narrative journey they create as they gradually build their literary tools. 
+                </p> 
+                <!--img src="sailing.png" class="mx-auto d-block w-25" /--> 
+                <h4 style="padding-left:1em;"> <a href="https://github.com/lfloegel/Operating-System" style="color:rgb(111, 165, 182);"> Operating System - KOS </a> </h4>
+                <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> C </h5> 
+                <p style="padding-left:5em;"> Built an operating system implementing basic Linux calls including but not limited to fork, exec, and wait. 
+                    Impemented with interrupt and eror handling and multiprocess memory managment for concurrent processing execution. 
+                </p> 
+                <h4 style="padding-left:1em;"> Mind of MRI </h4> 
+                <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> C#, Python, Blender </h5> 
+                <p style="padding-left:5em;"> Developed at Stevens Neuroimaging and Informatics Institute. Intended for graduate use, the program details 
+                    the complex mathematical and basic workings of MRI into simplifed 3D graphics. Allows students to directly see the cause and effects 
+                    on protons when manipulating the data. 
+                </p> 
+                <img src="images/neural.png" class="mx-auto d-block" style="width:25vw;" /> 
+                <h4 style="padding-left:1em;"> <a href="https://github.com/lfloegel/Computer-Graphics" style="color:rgb(111, 165, 182);"> Computer Graphics </a> </h4> 
+                <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> C++ </h5> 
+                <p style="padding-left:5em;"> Compiled Computer Graphics Program. Including but not limited to ray tracing, bezier curves, 
+                    animation, shading, rasterization, and texture mapping. 
+                </p> 
+                <img src="images/graphics.png" class="mx-auto d-block w-25" /> 
+                <h4 style="padding-left:1em;"> Tastbuddy </h4> 
+                <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> Java, Firebase, Android Studio, Adobe XD </h5> 
+                <p style="padding-left:5em;"> Android based app that allows users to create a currated shopping list based on ingredients at hand 
+                    or recipes they have favorited. Worked on backend infrastruture and designed the overall UI and UX of the app. 
+                </p> 
+                <img src="images/cooking.png" class="mx-auto d-block" style="width:25vw;" /> 
+                <h4 style="padding-left:1em;"> <a href="https://github.com/lfloegel/Rigged-Bow" style="color:rgb(111, 165, 182);"> Bow and Arrow Haptic Simulation </a> </h4> 
+                <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> C++, Chai3D, OpenGL, Blender </h5> 
+                <p style="padding-left:5em;"> 
+                        A force feed back simulation using the Novint Falcon haptic device and Chai3D library. Using OpenGL, developed a simulation 
+                        of a bow and arrow, modeling the physics and graphics of the string tension and the arrow trajectory. Modeled graphics in Blender. 
+                </p> 
+                <img src="images/pig.gif" class="mx-auto d-block w-25" /> 
+                <h4 style="padding-left:1em;"> <a href="https://github.com/DeoxyMoron/blockbased-vr" style="color:rgb(111, 165, 182);"> Blockbased Coding </a> </h4> 
+                <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> C#, Unity3D, Oculus, Blender </h5> 
+                <p style="padding-left:5em;"> Co-developed the front and backend of a Scratch inspired blockbased coding game to introduce programming 
+                    fundamentals to young children. I did a revamp of the in game graphics and interface to make the mechanics of the game intuitive 
+                    for young children. 
+                </p> 
+                <img src="images/sea.png" class="mx-auto d-block" style="width:25vw;" /> 
+            </div>
+
+            <div class="line"></div>
+
+            <!-- gallery -->
+            <div id="gallery"> 
+                <h2> Gallery </h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> 
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li> 
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li> 
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li> 
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li> 
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="d-block mx-auto" style="width:35vw;" src="images/pup.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block mx-auto w-25" src="images/journey.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block mx-auto w-25" src="images/puplove.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                                <img class="d-block mx-auto" style="width:30vw;" src="images/space.png" alt="Third slide">
+                                </div> 
+                                <div class="carousel-item">
+                                        <img class="d-block mx-auto" style="width:35vw;" src="images/m1.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                                <img class="d-block mx-auto" style="width:20vw;" src="images/m2.png" alt="First slide">
+                                                </div> 
+                                                <div class="carousel-item">
+                                                        <img class="d-block mx-auto" style="width:20vw;" src="images/m3.png" alt="First slide">
+                                                        </div> 
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="color:#000;">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="color:#000;">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div> 
+            </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
