@@ -9,7 +9,7 @@
     <title>Lara FS</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Scrollbar Custom CSS -->
@@ -24,152 +24,159 @@
 
 <body>
 
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Lara FS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" aria-current="page" href="#intro">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#84C6C8" class="bi bi-app" viewBox="0 0 15 15">
+                    <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+                </svg>
+                <span style="vertical-align:middle;">Intro</span>
+            </a>
+              <a class="nav-link" href="#experience">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#EA538A" class="bi bi-app" viewBox="0 0 15 15">
+                    <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+                </svg>
+                <span style="vertical-align:middle;">Experience</span>
+            </a>
+              <a class="nav-link" href="#projects">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#A680D3" class="bi bi-app" viewBox="0 0 15 15">
+                    <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+                </svg>
+                <span style="vertical-align:middle;">Projects</span>
+            </a>
+              <a class="nav-link" href="#gallery">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#E8A392" class="bi bi-app" viewBox="0 0 15 15">
+                    <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+                </svg>
+                <span style="vertical-align:middle;">Gallery</span>
+            </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
     <div class="wrapper d-flex align-items-stretch">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-
-
-        <div class="profile">
-                <img src="images/cg.png" alt="Image" class="img-fluid">
-              </div>
-
-            <ul class="list-unstyled components">
-                <li>
-                    <a href="#intro">Intro</a>
-                </li>
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#gallery">Gallery</a>
-                </li>
-
-
-                <li>
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Contact</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                                <a href="https://www.linkedin.com/in/larafs" class="btn btn-lg btn-outline-light"><i
-                                    class="fab fa-linkedin-in"></i>
-                                    <span> Linkedin </span>
-                                </a>
-                        </li>
-                        <li>
-                                <a href="https://github.com/lfloegel" class="btn btn-lg btn-outline-light"><i
-                                    class="fab fa-github"></i>
-                                    <span> Github </span>
-                                </a>
-                        </li>
-                        <li>
-                                <a href="https://www.facebook.com/profile.php?id=100017554575742" class="btn btn-lg btn-outline-light"><i
-                                    class="fab fa-facebook-f"></i>
-                                    <span> Facebook </span>
-                                </a>
-                        </li>
-                        </ul>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <button type="button" class="btn btn-outline-light download">
-                            <a href="src/resume.pdf" style="color:white;text-decoration:none;" class="resume"> 
-                                View Resume
-                            </a>
-                    </button>
-                </li>
-            </ul>
-        </nav>
 
         <!-- Page Content  -->
         <div id="content">
 
-            <div class="custom-menu" style="margin-top: -25px;margin-left:-25px;">
-                <button type="button" id="sidebarCollapse" class="btn btn-light">
-                <i class="fa fa-bars" style="font-size:25px;"></i>
-                <span class="sr-only">Toggle Menu</span>
-                </button>
-            </div>
-
             <header>
-                <div class="container h-100" id="home" style="padding-top:5em;padding-bottom:5em;">
-                    <h1 class="strokeme" id="title" style="font-size:9.8vw;">Lara <br> Floegel-Shetty</h1> 
-                    <h2 class="strokeme" id="cg" style="font-size: 5.8vw;"> Software Engineer </h2> 
-                    <h3 class="strokeme" id="style" style="font-size: 2.5vw;"> Computer Science M.S. | UCSB | 1st Year Masters </h3> 
+                <div class="container h-100" id="home" style="padding-top:11em;padding-bottom:5em;"> 
+                    <h1 class="strokeme" id="title" style="font-size:6.5vw;color:#EAEAEA;">Lara <br> Floegel-Shetty</h1> 
+                    <h2 class="strokeme" id="cg" style="font-size: 2.8vw;color:#84C6C8;"> Computer Graphics Engineer</h2> 
+                    <h3 class="strokeme" id="style" style="font-size: 1.25vw;color:#EAEAEA;"> <span style="color:#EA538A;">Computer Science M.S. and B.S. </span>| <span style="color:#A680D3">UCSB </span>| <span style="color:#E8A392">2nd Year Masters </span></h3> 
                 </div>
             </header>
 
 
-        <div id="intro"> 
-                <img src="images/sailing25.png" class="img-fluid d-block mx-auto" style="width:18em;height:auto;margin-top:4em;" alt="Responsive image"> 
-                <div id="intro-content" style="padding-top:1em;"> 
-                    <h2 style="font-size:2.5em;"> Intro </h2> 
+        <div id="intro">
+                <div id="intro-content" style="padding-top:11em;"> 
+                    <img src="images/seals25.png" class="img-fluid d-block mx-auto" style="width:46em;height:auto;float:left;padding:3em;" alt="Responsive image"> 
+                    <h2 style="font-size:2.5em;color:#84C6C8;"> Intro </h2> 
                     <p style="font-size:1.1em;"> 
-                    Welcome! I'm Lara, a 1st year Masters student in Computer Science at the College of Engineering at University of California, Santa Barbara. 
-                    As an aspiring Software Engineer with a love for Computer Graphics, I strive to further develop my skills in bridging the real and visual worlds. 
+                    <span style="color:#84C6C8;">Welcome! </span>I'm <span style="color:#84C6C8;">Lara</span> (as in Lara Croft), a 2nd year Masters student in Computer Science at the College of Engineering at University of California, Santa Barbara. 
+                    As an aspiring <span style="color:#84C6C8;">Computer Graphics Engineer</span>, I strive to further develop my skills in bridging the real and visual worlds. 
                     </p> 
                     <p style="font-size:1.1em;">
-                    Currently in graduate school, I want to further my research in Computer Graphics. My passion
-                    lies in the intersection between art, technology, and innovation, encompassing areas like 
-                    video game development and software for movie production.  
-                    During that time, I am intent on getting valuable hands on experience and look forward 
-                    to working alongside your team in developing optimized and innovative CG software! 
-                    </p>
+                    <span style="color:#84C6C8;">Graduating in June 2023</span>, I am looking for full time roles that encompass my passion
+                    that lies in the intersection between art, technology, and innovation. My interests lie
+                    in <span style="color:#84C6C8;">Real Time Rendering </span>, developing and optimizing engines to create stunning and performative
+                    graphics in video games and other software. I look forward to working alongside your team in 
+                    developing optimized and innovative CG software! 
+                    </p> 
+                    <p style="font-size:1.1em;">
+                    Outside of experimenting with my renderer and playing video games, I love to go scuba diving and I am
+                    training to become a private pilot! I need to live up to the Lara Croft legacy somehow.
+                    </p> 
                 </div> 
             </div>
 
             <div class="line"></div>
             
-            <h2 id="experience">Experience</h2> 
+            <h2 id="experience" style="color:#EA538A;">Experience</h2> 
 
             <div style="margin-left:auto;margin-right:auto;"> 
                     <div class="container" style="list-style-type:none;"> 
-                    <li class="li">
-                        <div class="timestamp">
-                            <span class="date">June 2021 - Sept 2021</span>
-                        </div>
-                        <div class="status">
-                            <h4>Disney Environment Software Engineer Intern ** Deferred to Summer 2021 ** </h4> 
-                            <p> 
-                            Due to the pandemic, Disney has deferred their Summer 2020 Walt Disney Animation Studios interships to Summer 2021. 
-                            </p> 
-                            <p> 
-                            In lull of my internship, I have taught myself modeling through Maya, familiarized myself with OpenGL, CMake, and USD, and 
-                            advanced my understanding of CG related procedural systems (i.e. CG primitives, instancing techniques, particle systems). 
-                            </p> 
-                            <p> 
-                            During my internship, I worked on software that instanced modeled geometry and procedurally generated primitives in conjunction with USD, Universal Scene 
-                            Description. I worked on major redesigning and unifying of instancing systems to better optimize toolset that is used to build environments. 
-                            </p> 
-                        </div>
-                    </li>
                     
                     <li class="li">
                         <div class="timestamp">
-                            <span class="date"> Sept 2021 - Ongoing</span>
+                            <span class="date"> Sept 2022 - Ongoing</span>
                         </div>
                         <div class="status">
-                            <h4>Computer Graphics Research Intern</h4> 
+                            <h4>Graduate Computer Graphics Researcher: Real Time Rendering</h4> 
                             <p> 
-                            I will be joining Computer Graphics researcher <a href="https://sites.cs.ucsb.edu/~lingqi/" target="_blank" style="color:rgb(111, 165, 182);"> Lingqi Yan </a> as 
-                            a research intern in his lab at UCSB. The research will focus on rendering photo realistic graphics at real world complexity.   
+                            I am working alongside Computer Graphics researcher <a href="https://sites.cs.ucsb.edu/~lingqi/" target="_blank" style="color:rgb(111, 165, 182);"> Lingqi Yan </a> as 
+                            a graduate researcher in his lab at UCSB and as part of my Master's Project 2023. The topic of the research revolves around developing more optimized method 
+                            to reconstruct signed distance functions from extracted 3D point clouds data fast enough for real time production usage.   
                             </p>
                         </div>
                     </li> 
+                    
+                    <li class="li">
+                        <div class="timestamp">
+                            <span class="date"> Sept 2022 - Dec 2022</span>
+                        </div>
+                        <div class="status">
+                            <h4>Computer Graphics Teaching </h4> 
+                            <p> 
+                            I assisted in teaching undergraduates complex introductory topics in Computer Graphcis, from a high level view to
+                            a more technical implementation. Additionally, I assisted in debugging the student's assingments. 
+                            </p>
+                        </div>
+                    </li> 
+                    
+                    <li class="li">
+                        <div class="timestamp">
+                            <span class="date"> June 2022 - Sept 2022</span>
+                        </div>
+                        <div class="status">
+                            <h4>Insomniac Games Real Time Rendering Intern </h4> 
+                            <p> 
+                            I interned with the Real Time Rendering team at Insomniac Games, implementing new features in their engines
+                            and debugging and optimizing existing features for faster performance and more memory efficiency. 
+                            </p>
+                        </div>
+                    </li> 
+
+                    <li class="li">
+                        <div class="timestamp">
+                            <span class="date">June 2021 - Sept 2021</span> 
+                        </div>
+                        <div class="status"> 
+                            <h4>Disney Environment Software Engineer Intern ** Deferred to Summer 2021 ** </h4> 
+                            <p> 
+                            Due to the pandemic, Disney deferred their Summer 2020 Walt Disney Animation Studios internships to Summer 2021. 
+                            </p> 
+                            <p> 
+                            In lull of my internship, I have taught myself modeling through Maya, OpenGL and CMake, familiarized myself with USD and 
+                            advanced my understanding of CG related procedural systems (i.e. CG primitives, instancing techniques, particle systems). 
+                            </p> 
+                            <p> 
+                            During my internship, I developed software that instanced modeled geometry and procedurally generated primitives in conjunction with USD, Universal Scene 
+                            Description. I worked on major redesigning and unifying of the instancing systems to better optimize the toolset that is used to procedurally 
+                            generate intricate environments. 
+                            </p> 
+                        </div>
+                    </li>
     
                     <li class="li">
                             <div class="timestamp">
                                 <span class="date">2018 - 2020</span>
                             </div>
                             <div class="status">
-                                <h4>Software Developer</h4> 
+                                <h4>Virtual Reality Software Developer and Game Developer</h4> 
                                 <p> 
                                 UCSB Gevirtz School of Education. Lead software developer in building the backend infrastructure of a SteamVR 
                                 educational game modeled for children with difficulty learning in a traditional classroom environment. Designed 
-                                in game graphics and user interface. 
+                                in game graphics and user interface, as well as developed the animation and physics for the game. Additionally, I
+                                worked alongside the research team in designing the game itself. 
                                 </p>
                             </div>
                         </li>
@@ -206,13 +213,13 @@
             <div class="line"></div>
 
             <div id="coursework-content"> 
-                <h2> Relevant Coursework</h5> 
+                <h2 style="color:#EAEAEA;margin-top:8em;"> Relevant Coursework</h5> 
                 <p style="margin-left:auto;margin-right:auto;"> 
-                <b style="color:#000;"> CS190i </b> - Offline Rendering, </b> <b style="color:#000;"> CS180 </b> - Computer Graphics, <b style="color:#000;"> CS181 </b> - Computer Vision, <b style="color:#000;"> CS170 </b> - Operating Systems, <b style="color:#000;"> CS130H </b> - Game Development and Design, 
-                <b style="color:#000;"> MAT259 </b> - Data Visualization, </b><b style="color:#000;">  Physcis 1/2/3/3L </b> - Basic Physics, <b style="color:#000;"> Math 3B </b> - Calculus, <b style="color:#000;"> Math 4A </b> - Linear Algrebra, <b style="color:#000;"> Math 4B </b> - Differential Equations, 
-                <b style="color:#000;"> Math 6A </b> - Vector Calculus, <b style="color:#000;"> CS160 </b> - Compiler Systems, </b><b style="color:#000;"> CS138 </b> - Automata and Formal Languages, <b style="color:#000;"> ECE194T </b> - Haptic Engineering, <b style="color:#000;"> CS185 </b> 
-                - Human Computer Interaction, <b style="color:#000;"> CS184 </b> - Android Development, <b style="color:#000;"> CS130A </b> - Data Structures and Algorithms, <b style="color:#000;"> PSTAT120A </b> - Probability and 
-                Statistics, <b style="color:#000;"> PSTAT120B </b> - Applied Statistics 
+                    <b style="color:#EAEAEA;"> CS190i: </b>Offline Rendering, </b> <b style="color:#EAEAEA;"> CS180: </b>Computer Graphics, <b style="color:#EAEAEA;"> CS181: </b>Computer Vision, <b style="color:#EAEAEA;"> CS170: </b>Operating Systems, <b style="color:#EAEAEA;"> CS130H: </b>Game Development and Design, 
+                    <b style="color:#EAEAEA;"> MAT259: </b>Data Visualization, </b><b style="color:#EAEAEA;">  Physcis 1/2/3/3L: </b> Basic Physics, <b style="color:#EAEAEA;"> Math 3B: </b>Calculus, <b style="color:#EAEAEA;"> Math 4A: </b>Linear Algrebra, <b style="color:#EAEAEA;"> Math 4B: </b>Differential Equations, 
+                    <b style="color:#EAEAEA;"> Math 6A: </b>Vector Calculus, <b style="color:#EAEAEA;"> CS160: </b>Compiler Systems, </b><b style="color:#EAEAEA;"> CS138: </b>Automata and Formal Languages, <b style="color:#EAEAEA;"> ECE194T: </b>Haptic Engineering, <b style="color:#EAEAEA;"> CS185: </b> 
+                    Human Computer Interaction, <b style="color:#EAEAEA;"> CS184: </b>Android Development, <b style="color:#EAEAEA;"> CS130A: </b>Data Structures and Algorithms, <b style="color:#EAEAEA;"> PSTAT120A: </b>Probability and 
+                    Statistics, <b style="color:#EAEAEA;"> PSTAT120B: </b>Applied Statistics 
                 </p>
             </div>
 
@@ -220,7 +227,7 @@
 
             <!-- projects -->
             <div id="projects"> 
-                <h2> Projects </h2>
+                <h2 style="color:#A680D3;margin-top:8em;"> Projects </h2>
                 <h4 style="padding-left:1em;"> <a href="https://github.com/lfloegel/CookTorrance" style="color:rgb(111, 165, 182)"> Cook Torrance Implementation </a> </h4> 
                 <h5 style="padding-left:2em;color:rgba(50, 50, 50, 0.5800);"> C++, CMake </h5> 
                 <p style="padding-left:5em;"> Based on Peter Shirley's Ray Tracing in One Weekend, implements a Cook Torrance BRDF to the 
@@ -286,7 +293,7 @@
 
             <!-- gallery -->
             <div id="gallery"> 
-                <h2> Gallery </h2>
+                <h2 style="color:#E8A392;margin-top:8em;"> Gallery </h2>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -333,9 +340,10 @@
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
