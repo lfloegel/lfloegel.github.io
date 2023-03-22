@@ -8,7 +8,7 @@ html {
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: #010B11;
+    background: #000000;/*010B11*/
 }
 
 p {
@@ -21,7 +21,7 @@ p {
 
 .navbar {
     padding: 15px 10px;
-    background: linear-gradient(to bottom, #010B11 56%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, #000000 65%, rgba(0,0,0,0) 100%);
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
@@ -44,6 +44,39 @@ p {
 .line {
     width: 100%;
     margin: 58px 0;
+}
+
+/* ---------------------------------------------------
+    HEADER STYLE
+----------------------------------------------------- */
+
+.video-background-holder {
+    position: relative;
+    background-color: black;
+    min-height: 25rem;
+    width: 125%;
+    height: auto;
+    z-index: -11;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
 }
 
 /* ---------------------------------------------------

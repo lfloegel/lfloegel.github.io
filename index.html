@@ -51,11 +51,11 @@
                 </svg>
                 <span style="vertical-align:middle;">Projects</span>
             </a>
-              <a class="nav-link" href="#gallery">
+              <a class="nav-link" href="src/resume.pdf" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#E8A392" class="bi bi-app" viewBox="0 0 15 15">
                     <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
                 </svg>
-                <span style="vertical-align:middle;">Gallery</span>
+                <span style="vertical-align:middle;">Resume</span>
             </a>
             </div>
           </div>
@@ -68,15 +68,22 @@
         <div id="content">
 
             <header>
-                <div class="container h-100" id="home" style="padding-top:11em;padding-bottom:5em;"> 
-                    <h1 class="strokeme" id="title" style="font-size:6.5vw;color:#EAEAEA;">Lara <br> Floegel-Shetty</h1> 
-                    <h2 class="strokeme" id="cg" style="font-size: 2.8vw;color:#84C6C8;"> Computer Graphics Engineer</h2> 
-                    <h3 class="strokeme" id="style" style="font-size: 1.25vw;color:#EAEAEA;"> <span style="color:#EA538A;">Computer Science M.S. and B.S. </span>| <span style="color:#A680D3">UCSB </span>| <span style="color:#E8A392">2nd Year Masters </span></h3> 
+                <!-- The HTML5 video element that will create the background video on the header -->
+                <div class="video-background-holder">
+                    <video class="w-100" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src="images/videos/shaderI.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="video-background-content container h-100" id="home" style="padding-top:11em;"> 
+                        <h1 class="strokeme" id="title" style="font-size:6.5vw;color:#EAEAEA;">Lara <br> Floegel-Shetty</h1> 
+                        <h2 class="strokeme" id="cg" style="font-size: 2.8vw;color:#84C6C8;"> Computer Graphics Engineer</h2> 
+                        <h3 class="strokeme" id="style" style="font-size: 1.25vw;color:#EAEAEA;"> <span style="">Computer Science M.S. and B.S. </span>| <span style="">UCSB </span>| <span style="">2nd Year Masters </span></h3> 
+                    </div>
                 </div>
             </header>
 
 
-        <div id="intro">
+            <div id="intro" class="mt-5">
                 <div id="intro-content" style="padding-top:11em;"> 
                     <img src="images/seals25.png" class="img-fluid d-block mx-auto" style="width:46em;height:auto;float:left;padding:3em;" alt="Responsive image"> 
                     <h2 style="font-size:2.5em;color:#84C6C8;"> Intro </h2> 
@@ -87,7 +94,7 @@
                     <p style="font-size:1.1em;">
                     <span style="color:#84C6C8;">Graduating in June 2023</span>, I am looking for full time roles that encompass my passion
                     that lies in the intersection between art, technology, and innovation. My interests lie
-                    in <span style="color:#84C6C8;">Real Time Rendering </span>, developing and optimizing engines to create stunning and performative
+                    in <span style="color:#84C6C8;">Real Time Rendering</span>, developing and optimizing engines to create stunning and performative
                     graphics in video games and other software. I look forward to working alongside your team in 
                     developing optimized and innovative CG software! 
                     </p> 
@@ -113,8 +120,9 @@
                             <h4>Real Time Rendering Graduate Researcher</h4> 
                             <p> 
                             I am working alongside Computer Graphics researcher <a href="https://sites.cs.ucsb.edu/~lingqi/" target="_blank" style="color:rgb(111, 165, 182);"> Lingqi Yan </a> as 
-                            a graduate researcher in his lab at UCSB and as part of my Master's Project 2023. The topic of the research revolves around developing more optimized method 
-                            to reconstruct signed distance functions from extracted 3D point clouds data fast enough for real time production usage.   
+                            a graduate researcher in his lab at UCSB and as part of my 2023 Masters Project. The research revolves around developing innovative methods 
+                            for the physically based real time rendering of complex appearances such as fibers that are fast enough for real time production usage 
+                            and maintains a high degree of realism. 
                             </p>
                         </div>
                     </li> 
@@ -124,10 +132,9 @@
                             <span class="date"> Sept 2022 - Dec 2022</span>
                         </div>
                         <div class="status">
-                            <h4>Computer Graphics Teaching </h4> 
+                            <h4>Computer Graphics Teaching Assistant</h4> 
                             <p> 
-                            I assisted in teaching undergraduates complex introductory topics in Computer Graphcis, from a high level view to
-                            a more technical implementation. Additionally, I assisted in debugging the student's assingments. 
+                            I assisted in teaching undergraduates complex introductory topics in Computer Graphcis, from a high level view to more technical implementations. 
                             </p>
                         </div>
                     </li> 
@@ -139,7 +146,7 @@
                         <div class="status">
                             <h4>Insomniac Games Real Time Rendering Intern </h4> 
                             <p> 
-                            I interned with the Real Time Rendering team at Insomniac Games, implementing new features in their engines
+                            I interned with the Rendering team at Insomniac Games, implementing new features in their engines
                             and debugging and optimizing existing features for faster performance and more memory efficiency. 
                             </p>
                         </div>
@@ -150,7 +157,7 @@
                             <span class="date">June 2021 - Sept 2021</span> 
                         </div>
                         <div class="status"> 
-                            <h4>Disney Environment Software Engineer Intern ** Deferred to Summer 2021 ** </h4> 
+                            <h4>Disney Environment Software Engineer Intern ** Deferred from Summer 2021 ** </h4> 
                             <p> 
                             Due to the pandemic, Disney deferred their Summer 2020 Walt Disney Animation Studios internships to Summer 2021. 
                             </p> 
