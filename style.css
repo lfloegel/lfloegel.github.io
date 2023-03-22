@@ -76,6 +76,7 @@ p {
 
 .video-background-content {
   position: relative;
+  left: -2em;
   z-index: 2;
 }
 
